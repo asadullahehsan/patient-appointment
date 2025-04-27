@@ -1,0 +1,4 @@
+/* Optional: keep all mat-form-fields full width */
+mat-form-field {
+  width: 100%;
+}

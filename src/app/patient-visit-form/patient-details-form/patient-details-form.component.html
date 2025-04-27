@@ -1,1 +1,17 @@
-<p>patient-details-form works!</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Potilaan koko nimi</mat-label>
+      <input matInput [(ngModel)]="patientName" placeholder="Kirjoita nimi">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Syntymäaika</mat-label>
+      <input matInput [(ngModel)]="birthDate" type="date">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill" class="w-full md:col-span-2">
+      <mat-label>Potilastunnus</mat-label>
+      <input matInput [(ngModel)]="patientId" placeholder="Tunnus">
+    </mat-form-field>
+  </div>
+  
