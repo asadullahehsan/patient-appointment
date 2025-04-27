@@ -9,10 +9,12 @@ import { PatientDetailsFormComponent } from "./patient-details-form/patient-deta
 import { VisitDetailsFormComponent } from "./visit-details-form/visit-details-form.component";
 import { StatusSelectorComponent } from "./status-selector/status-selector.component";
 import { DoctorAppointmentInfoComponent } from "./doctor-appointment-info/doctor-appointment-info.component";
+import { FormActionsComponent } from "./form-actions/form-actions.component";
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-patient-visit-form',
-  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent, VisitDetailsFormComponent, StatusSelectorComponent, DoctorAppointmentInfoComponent],
+  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent, VisitDetailsFormComponent, StatusSelectorComponent, DoctorAppointmentInfoComponent, FormActionsComponent, MatCardModule],
   templateUrl: './patient-visit-form.component.html',
   styleUrl: './patient-visit-form.component.css'
 })

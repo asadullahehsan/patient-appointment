@@ -11,14 +11,18 @@
     </div>
 
     <form class="space-y-6">
-      <app-patient-details-form></app-patient-details-form>
-      <app-visit-details-form></app-visit-details-form>
-      <app-status-selector></app-status-selector>
-      <app-doctor-appointment-info></app-doctor-appointment-info>
-
-      
-
-      
+      <mat-card class="p-4">
+        <app-patient-details-form></app-patient-details-form>
+      </mat-card>
+      <mat-card class="p-4">
+        <app-visit-details-form></app-visit-details-form>
+      </mat-card>
+      <mat-card class="p-4">
+        <app-status-selector></app-status-selector>
+      </mat-card>
+      <mat-card class="p-4">
+        <app-doctor-appointment-info></app-doctor-appointment-info>
+      </mat-card>
 
       <mat-form-field appearance="fill" class="w-full">
         <mat-label>Lisähuomiot</mat-label>
@@ -27,17 +31,10 @@
           <mat-icon>mic</mat-icon>
         </button>
       </mat-form-field>
-
-      <div class="flex justify-end gap-4">
-        <button mat-stroked-button color="primary">Sulje</button>
-        <button
-          mat-flat-button
-          color="primary"
-          class="bg-blue-600 hover:bg-blue-700 text-white"
-        >
-          Luo tapahtuma
-        </button>
-      </div>
+      
+      <mat-card class="p-4">
+        <app-form-actions></app-form-actions>
+      </mat-card>
     </form>
   </div>
 </div>

@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class FormActionsComponent {
 
+  onSave() {
+    console.log('Tapahtuma tallennettu (dummy save)');
+  }
+
+  onClose() {
+    console.log('Lomake suljettu (dummy close)');
+  }
 }
