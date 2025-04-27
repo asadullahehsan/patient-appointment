@@ -1,6 +1,8 @@
 # PatientAppointment
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+It is made totally using stand alone components.
+For styling, Angular Material and Tailwind CSS is used.
 
 ## Development server
 
