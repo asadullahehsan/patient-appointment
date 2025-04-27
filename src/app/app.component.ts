@@ -9,5 +9,9 @@ import { PatientVisitFormComponent } from './patient-visit-form/patient-visit-fo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'patient-appointment';
+  currentPage: 'dashboard' | 'patientVisitForm' = 'dashboard'; // default
+
+  navigateTo(page: 'dashboard' | 'patientVisitForm') {
+    this.currentPage = page;
+  }
 }

@@ -1,4 +1,29 @@
-<main>
-  <app-dashboard />
-  <app-patient-visit-form />
+<main class="p-4">
+  <!-- Navigation (you can style this later) -->
+  <div class="flex gap-4 mb-6">
+    <button mat-stroked-button (click)="navigateTo('dashboard')">
+      Dashboard
+    </button>
+
+    <button
+      mat-flat-button
+      color="primary"
+      (click)="navigateTo('patientVisitForm')"
+    >
+      Create Patient Visit
+    </button>
+  </div>
+
+  <!-- Page rendering -->
+  @if(currentPage === 'dashboard') {
+
+  <ng-container>
+    <app-dashboard></app-dashboard>
+  </ng-container>
+  } @if(currentPage === 'patientVisitForm') {
+
+  <ng-container>
+    <app-patient-visit-form></app-patient-visit-form>
+  </ng-container>
+  }
 </main>
