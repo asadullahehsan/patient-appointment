@@ -1,29 +1,28 @@
 <main class="p-4">
-  <!-- Navigation (you can style this later) -->
   <div class="flex gap-4 mb-6">
-    <button mat-stroked-button (click)="navigateTo('dashboard')">
+    <button
+      class="px-4 py-2 border rounded-md hover:bg-gray-100 text-gray-800"
+      (click)="navigateTo('dashboard')"
+    >
       Dashboard
     </button>
-
     <button
-      mat-flat-button
-      color="primary"
+      class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
       (click)="navigateTo('patientVisitForm')"
     >
       Create Patient Visit
     </button>
   </div>
 
-  <!-- Page rendering -->
-  @if(currentPage === 'dashboard') {
-
-  <ng-container>
-    <app-dashboard></app-dashboard>
-  </ng-container>
-  } @if(currentPage === 'patientVisitForm') {
-
-  <ng-container>
-    <app-patient-visit-form></app-patient-visit-form>
-  </ng-container>
-  }
+  <div class="bg-white rounded-lg shadow-md p-6">
+    @if (currentPage === 'dashboard') {
+      <ng-container>
+        <app-dashboard></app-dashboard>
+      </ng-container>
+    } @else if (currentPage === 'patientVisitForm') {
+      <ng-container>
+        <app-patient-visit-form></app-patient-visit-form>
+      </ng-container>
+    }
+  </div>
 </main>
