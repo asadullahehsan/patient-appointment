@@ -57,3 +57,31 @@ src/
     │           ├── recent-patients.component.ts
     │           ├── recent-patients.component.html
     │           ├── recent-patients.component.css
+    |
+    ├──PatientVisitFormComponent (Main Container)
+    │
+    ├── PatientDetailsFormComponent
+    │   └─ Inputs for:
+    │        - Full name
+    │        - Date of birth
+    │        - Patient ID
+    │
+    ├── VisitDetailsFormComponent
+    │   └─ Inputs for:
+    │        - Event type (Tapahtuman tyyppi)
+    │        - Visit reasons (Käynnin syyt)
+    │        - Additional notes (Lisähuomiot)
+    │
+    ├── StatusSelectorComponent
+    │   └─ Radio buttons for:
+    │        - Luonnos, Valmis, Hyväksytty
+    │
+    ├── DoctorAppointmentInfoComponent
+    │   └─ Fields for:
+    │        - Doctor name (readonly)
+    │        - Appointment date/time (readonly, editable icon)
+    │
+    └── FormActionsComponent
+        └─ Buttons:
+            - "Luo tapahtuma" (Create Event)
+            - "Sulje" (Close)
