@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-worklist-item',
-  imports: [],
+  standalone: true,
+  imports: [
+    CommonModule,
+    MatIconModule
+  ],
   templateUrl: './worklist-item.component.html',
-  styleUrl: './worklist-item.component.css'
+  styleUrls: ['./worklist-item.component.css']
 })
 export class WorklistItemComponent {
-
+  @Input() name = '';
+  @Input() time = '';
+  @Input() room = '';
+  @Input() status: 'checked' | 'pending' = 'pending';
 }
