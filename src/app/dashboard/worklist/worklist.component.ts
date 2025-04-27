@@ -4,7 +4,7 @@ import { WorklistItemComponent } from "./worklist-item/worklist-item.component";
 
 @Component({
   selector: 'app-worklist',
-  imports: [WorklistItemComponent, MatIconModule],
+  imports: [MatIconModule],
   templateUrl: './worklist.component.html',
   styleUrl: './worklist.component.css'
 })
