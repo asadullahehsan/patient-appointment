@@ -1,0 +1,4 @@
+/* Basic padding and background */
+:host {
+  display: block;
+}

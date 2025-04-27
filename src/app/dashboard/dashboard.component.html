@@ -1,5 +1,20 @@
-<p>dashboard works!</p>
-<app-top-bar />
-<app-navigation-bar />
-<app-worklist />
-<app-sidebar />
+<div class="flex flex-col min-h-screen bg-gray-100">
+  <!-- Top Bar -->
+  <app-top-bar></app-top-bar>
+
+  <!-- Navigation Bar -->
+  <app-navigation-bar></app-navigation-bar>
+
+  <!-- Main Content Area -->
+  <div class="flex flex-1 gap-6 p-6">
+    <!-- Worklist -->
+    <div class="flex-1">
+      <app-worklist></app-worklist>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w-80">
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+</div>
