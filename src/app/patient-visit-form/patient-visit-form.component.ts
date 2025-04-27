@@ -6,10 +6,11 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { PatientDetailsFormComponent } from "./patient-details-form/patient-details-form.component";
+import { VisitDetailsFormComponent } from "./visit-details-form/visit-details-form.component";
 
 @Component({
   selector: 'app-patient-visit-form',
-  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent],
+  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent, VisitDetailsFormComponent],
   templateUrl: './patient-visit-form.component.html',
   styleUrl: './patient-visit-form.component.css'
 })

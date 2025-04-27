@@ -1,1 +1,21 @@
-<p>visit-details-form works!</p>
+<div class="grid grid-cols-1 gap-6">
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>Tapahtuman tyyppi</mat-label>
+    <input
+      matInput
+      [(ngModel)]="eventType"
+      placeholder="Tapahtuman tyyppi..."
+    />
+    <button mat-icon-button matSuffix>
+      <mat-icon>mic</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>Käynnin syyt</mat-label>
+    <input matInput [(ngModel)]="visitReason" placeholder="Käynnin syyt..." />
+    <button mat-icon-button matSuffix>
+      <mat-icon>mic</mat-icon>
+    </button>
+  </mat-form-field>
+</div>

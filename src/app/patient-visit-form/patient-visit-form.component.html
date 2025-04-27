@@ -12,22 +12,7 @@
 
     <form class="space-y-6">
       <app-patient-details-form></app-patient-details-form>
-
-      <mat-form-field appearance="fill" class="w-full">
-        <mat-label>Tapahtuman tyyppi</mat-label>
-        <input matInput placeholder="Tapahtuman tyyppi..." />
-        <button mat-icon-button matSuffix>
-          <mat-icon>mic</mat-icon>
-        </button>
-      </mat-form-field>
-
-      <mat-form-field appearance="fill" class="w-full">
-        <mat-label>Käynnin syyt</mat-label>
-        <input matInput placeholder="Käynnin syyt..." />
-        <button mat-icon-button matSuffix>
-          <mat-icon>mic</mat-icon>
-        </button>
-      </mat-form-field>
+      <app-visit-details-form></app-visit-details-form>
 
       <div class="flex flex-col">
         <label class="mb-2 font-medium">Tila:</label>
