@@ -42,44 +42,44 @@ src/
     │   │   ├── worklist.component.html
     │   │   ├── worklist.component.css
     │   │   ├── worklist-item/
-    │   │       ├── worklist-item.component.ts
-    │   │       ├── worklist-item.component.html
-    │   │       ├── worklist-item.component.css
+    │   │   │   ├── worklist-item.component.ts
+    │   │   │   ├── worklist-item.component.html
+    │   │   │   ├── worklist-item.component.css
     │   ├── sidebar/
-    │       ├── sidebar.component.ts
-    │       ├── sidebar.component.html
-    │       ├── sidebar.component.css
-    │       ├── shortcuts/
-    │       │   ├── shortcuts.component.ts
-    │       │   ├── shortcuts.component.html
-    │       │   ├── shortcuts.component.css
-    │       ├── recent-patients/
-    │           ├── recent-patients.component.ts
-    │           ├── recent-patients.component.html
-    │           ├── recent-patients.component.css
-    |
+    │   │   ├── sidebar.component.ts
+    │   │   ├── sidebar.component.html
+    │   │   ├── sidebar.component.css
+    │   │   ├── shortcuts/
+    │   │   │   ├── shortcuts.component.ts
+    │   │   │   ├── shortcuts.component.html
+    │   │   │   ├── shortcuts.component.css
+    │   │   ├── recent-patients/
+    │   │   │   ├── recent-patients.component.ts
+    │   │   │   ├── recent-patients.component.html
+    │   │   │   ├── recent-patients.component.css
+    │
     ├──PatientVisitFormComponent (Main Container)
     │
     ├── PatientDetailsFormComponent
     │   └─ Inputs for:
-    │        - Full name
-    │        - Date of birth
-    │        - Patient ID
+    │       - Full name
+    │       - Date of birth
+    │       - Patient ID
     │
     ├── VisitDetailsFormComponent
     │   └─ Inputs for:
-    │        - Event type (Tapahtuman tyyppi)
-    │        - Visit reasons (Käynnin syyt)
-    │        - Additional notes (Lisähuomiot)
+    │       - Event type (Tapahtuman tyyppi)
+    │       - Visit reasons (Käynnin syyt)
+    │       - Additional notes (Lisähuomiot)
     │
     ├── StatusSelectorComponent
     │   └─ Radio buttons for:
-    │        - Luonnos, Valmis, Hyväksytty
+    │       - Luonnos, Valmis, Hyväksytty
     │
     ├── DoctorAppointmentInfoComponent
     │   └─ Fields for:
-    │        - Doctor name (readonly)
-    │        - Appointment date/time (readonly, editable icon)
+    │       - Doctor name (readonly)
+    │       - Appointment date/time (readonly, editable icon)
     │
     └── FormActionsComponent
         └─ Buttons:
