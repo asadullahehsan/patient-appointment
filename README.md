@@ -13,5 +13,5 @@ ng serve
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## AI Tools & Assistance
-- Gemini AI
-For translation of what is written in the image, brainstorming and general question and answering assistance
+- Gemini AI, Chat GPT:
+For translation of what is written in the image, brainstorming, general question/answers and for pair programming.
