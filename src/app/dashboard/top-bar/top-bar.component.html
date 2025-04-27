@@ -1,1 +1,45 @@
-<p>top-bar works!</p>
+<mat-toolbar class="shadow-sm bg-white">
+    <div class="flex justify-between items-center w-full">
+      <div class="flex items-center w-1/2">
+        <mat-form-field appearance="outline" class="w-full">
+          <mat-label>Hae avainsanoja...</mat-label>
+          <input matInput [(ngModel)]="searchQuery" placeholder="Search..."/>
+          <button mat-icon-button matSuffix aria-label="Search">
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+  
+      <div class="flex items-center space-x-4">
+        <button mat-icon-button aria-label="Notifications">
+          <mat-icon>notifications</mat-icon>
+        </button>
+  
+        <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Open Profile Menu">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+  
+        <mat-menu #profileMenu="matMenu">
+          <div class="px-4 py-2">
+            <div class="font-semibold">Kerola Tuomas Veikko</div>
+            <div class="text-sm text-gray-500">Erikoissairaanhoito</div>
+            <div class="text-sm text-gray-500">Päljäthä. esh. P0007</div>
+          </div>
+          <mat-divider></mat-divider>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Asetukset</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>admin_panel_settings</mat-icon>
+            <span>Avaa ylläpitäjän paneeli</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+            <span>Kirjaudu ulos</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+  
