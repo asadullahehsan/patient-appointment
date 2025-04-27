@@ -1,0 +1,10 @@
+/* Optional styling for radio buttons */
+mat-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  mat-radio-button {
+    margin-right: 1rem;
+  }
+  
