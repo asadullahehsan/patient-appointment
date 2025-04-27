@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { PatientVisitFormComponent } from './patient-visit-form/patient-visit-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [DashboardComponent],
+  imports: [DashboardComponent, PatientVisitFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

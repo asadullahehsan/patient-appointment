@@ -1,1 +1,101 @@
-<p>patient-visit-form works!</p>
+<div class="flex flex-col items-center p-4 md:p-8">
+  <div class="w-full max-w-2xl bg-white rounded-2xl shadow-md p-6 space-y-6">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="text-lg font-semibold">
+        {{ doctor }}, Helsingin Sairaala, Kardiologian osasto
+      </div>
+      <div class="text-sm text-gray-500 flex items-center gap-2">
+        {{ appointmentDate | date : "dd/MM/yyyy HH:mm" }}
+        <mat-icon>edit</mat-icon>
+      </div>
+    </div>
+
+    <form class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Potilaan koko nimi</mat-label>
+          <input matInput placeholder="Kirjoita nimi" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Syntymäaika</mat-label>
+          <input matInput type="date" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Potilastunnus</mat-label>
+          <input matInput placeholder="Tunnus" />
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Tapahtuman tyyppi</mat-label>
+        <input matInput placeholder="Tapahtuman tyyppi..." />
+        <button mat-icon-button matSuffix>
+          <mat-icon>mic</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Käynnin syyt</mat-label>
+        <input matInput placeholder="Käynnin syyt..." />
+        <button mat-icon-button matSuffix>
+          <mat-icon>mic</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <div class="flex flex-col">
+        <label class="mb-2 font-medium">Tila:</label>
+        <mat-radio-group
+          [(ngModel)]="selectedStatus"
+          [ngModelOptions]="{ standalone: true }"
+          class="flex flex-row gap-8"
+        >
+          @for (status of statuses; track status) {
+          <mat-radio-button [value]="status">
+            {{ status }}
+          </mat-radio-button>
+          }
+        </mat-radio-group>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Lääkäri</mat-label>
+          <input matInput [value]="doctor" disabled />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="w-full">
+          <mat-label>Vastaanottoaika ja -päivämäärä</mat-label>
+          <input
+            matInput
+            [value]="appointmentDate | date : 'dd/MM/yyyy HH:mm'"
+            disabled
+          />
+          <button mat-icon-button matSuffix>
+            <mat-icon>edit</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <mat-form-field appearance="fill" class="w-full">
+        <mat-label>Lisähuomiot</mat-label>
+        <textarea matInput rows="3" placeholder="Lisähuomiot..."></textarea>
+        <button mat-icon-button matSuffix>
+          <mat-icon>mic</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <div class="flex justify-end gap-4">
+        <button mat-stroked-button color="primary">Sulje</button>
+        <button
+          mat-flat-button
+          color="primary"
+          class="bg-blue-600 hover:bg-blue-700 text-white"
+        >
+          Luo tapahtuma
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
