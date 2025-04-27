@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './recent-patients.component.css'
 })
 export class RecentPatientsComponent {
-
+  recentPatients = [
+    'Juha Lahtinen',
+    'Helena Nieminen',
+    'Marko Salminen',
+    'Laura Virtanen',
+    'Mikko Mäkelä'
+  ];
 }

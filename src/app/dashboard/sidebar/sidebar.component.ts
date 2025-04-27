@@ -6,24 +6,13 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-sidebar',
   imports: [
-    MatIconModule
-  ],
+    MatIconModule,
+    ShortcutsComponent,
+    RecentPatientsComponent
+],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  shortcuts = [
-    { icon: 'assignment', label: 'Sairaalalähete' },
-    { icon: 'edit_note', label: 'Tekstin lisäys' },
-    { icon: 'content_copy', label: 'Kopioi viimeisin' },
-    { icon: 'person_add', label: 'Lisää uusi potilas' }
-  ];
-
-  recentPatients = [
-    'Juha Lahtinen',
-    'Helena Nieminen',
-    'Marko Salminen',
-    'Laura Virtanen',
-    'Mikko Mäkelä'
-  ];
+    
 }
