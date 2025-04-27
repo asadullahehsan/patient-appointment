@@ -1,0 +1,7 @@
+/* Make sure the mat-form-fields stretch properly */
+mat-form-field {
+    width: 100%;
+  }
+  
+  /* The edit button positioning is handled by Tailwind already */
+  

@@ -14,27 +14,11 @@
       <app-patient-details-form></app-patient-details-form>
       <app-visit-details-form></app-visit-details-form>
       <app-status-selector></app-status-selector>
+      <app-doctor-appointment-info></app-doctor-appointment-info>
 
       
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <mat-form-field appearance="fill" class="w-full">
-          <mat-label>Lääkäri</mat-label>
-          <input matInput [value]="doctor" disabled />
-        </mat-form-field>
-
-        <mat-form-field appearance="fill" class="w-full">
-          <mat-label>Vastaanottoaika ja -päivämäärä</mat-label>
-          <input
-            matInput
-            [value]="appointmentDate | date : 'dd/MM/yyyy HH:mm'"
-            disabled
-          />
-          <button mat-icon-button matSuffix>
-            <mat-icon>edit</mat-icon>
-          </button>
-        </mat-form-field>
-      </div>
+      
 
       <mat-form-field appearance="fill" class="w-full">
         <mat-label>Lisähuomiot</mat-label>

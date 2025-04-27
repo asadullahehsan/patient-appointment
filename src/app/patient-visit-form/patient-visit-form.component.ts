@@ -8,10 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { PatientDetailsFormComponent } from "./patient-details-form/patient-details-form.component";
 import { VisitDetailsFormComponent } from "./visit-details-form/visit-details-form.component";
 import { StatusSelectorComponent } from "./status-selector/status-selector.component";
+import { DoctorAppointmentInfoComponent } from "./doctor-appointment-info/doctor-appointment-info.component";
 
 @Component({
   selector: 'app-patient-visit-form',
-  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent, VisitDetailsFormComponent, StatusSelectorComponent],
+  imports: [MatIconModule, DatePipe, MatFormFieldModule, MatRadioModule, FormsModule, MatInputModule, PatientDetailsFormComponent, VisitDetailsFormComponent, StatusSelectorComponent, DoctorAppointmentInfoComponent],
   templateUrl: './patient-visit-form.component.html',
   styleUrl: './patient-visit-form.component.css'
 })
