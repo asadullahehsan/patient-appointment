@@ -1,0 +1,12 @@
+button {
+  transition: background-color 0.2s;
+}
+
+mat-icon {
+  color: #4a5568; /* Tailwind slate-700 */
+}
+
+span {
+  color: #4a5568;
+  font-weight: 500;
+}

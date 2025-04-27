@@ -1,1 +1,14 @@
-<p>navigation-bar works!</p>
+<nav>
+  <ul class="flex flex-wrap justify-start gap-4 p-4 bg-white shadow-sm">
+    @for (item of navItems; track item.label) {
+    <li>
+      <button mat-button class="flex flex-col items-center">
+        <mat-icon class="text-3xl mb-2">{{ item.icon }}</mat-icon>
+        <span class="text-sm text-center">{{ item.label }}</span>
+      </button>
+    </li>
+    } @empty {
+    <li>No navigation items to display.</li>
+    }
+  </ul>
+</nav>
