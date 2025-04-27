@@ -15,3 +15,43 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ## AI Tools & Assistance
 - Gemini AI, Chat GPT:
 For translation of what is written in the image, brainstorming, general question/answers and for pair programming.
+Gemini AI is good at syntax, becuase it has access to latest data
+Chat GPT is good at providing basic layouts and implementation without errors
+So I used Chat GPT to get a component first, then I used Gemini AI to fix minor issues. Finally I checked the output to confirm.
+Chat GPT makes mistakes with latest syntax of Angular, but Gemini is aware of it, so it can convert old syntax to new.
+
+## Flow
+src/
+└── app/
+    ├── dashboard/
+    │   ├── dashboard.component.ts
+    │   ├── dashboard.component.html
+    │   ├── dashboard.component.css
+    │   ├── top-bar/
+    │   │   ├── top-bar.component.ts
+    │   │   ├── top-bar.component.html
+    │   │   ├── top-bar.component.css
+    │   ├── navigation-bar/
+    │   │   ├── navigation-bar.component.ts
+    │   │   ├── navigation-bar.component.html
+    │   │   ├── navigation-bar.component.css
+    │   ├── worklist/
+    │   │   ├── worklist.component.ts
+    │   │   ├── worklist.component.html
+    │   │   ├── worklist.component.css
+    │   │   ├── worklist-item/
+    │   │       ├── worklist-item.component.ts
+    │   │       ├── worklist-item.component.html
+    │   │       ├── worklist-item.component.css
+    │   ├── sidebar/
+    │       ├── sidebar.component.ts
+    │       ├── sidebar.component.html
+    │       ├── sidebar.component.css
+    │       ├── shortcuts/
+    │       │   ├── shortcuts.component.ts
+    │       │   ├── shortcuts.component.html
+    │       │   ├── shortcuts.component.css
+    │       ├── recent-patients/
+    │           ├── recent-patients.component.ts
+    │           ├── recent-patients.component.html
+    │           ├── recent-patients.component.css
